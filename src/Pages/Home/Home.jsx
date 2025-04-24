@@ -1,7 +1,13 @@
-import React from "react";
+import Home1 from "./Partials/Home1";
 
 const Home = () => {
-  return <div>Home page</div>;
+  return (
+    <>
+      <div className="">
+        <Home1 />
+      </div>
+    </>
+  );
 };
 
 export default Home;
