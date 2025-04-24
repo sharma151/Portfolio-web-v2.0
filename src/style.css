@@ -13,10 +13,12 @@ html {
 
   --imp-text-color: #c770f0;
 }
+*{
+  background-color: #0e0a18;
+}
 .home-section {
   position: relative;
-  z-index: -1;
-  background-image: var(--image-gradient), url("./assets/home-bg.jpg");
+  /* background-image: url("./assets/home-bg.jpg"); */
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
