@@ -1,5 +1,5 @@
 import React from "react";
-import homeLogo from "@/assets/home-main.svg";
+import homeLogo from "@/assets/home-avatar.png";
 import Type from "@/Components/Type";
 
 function Home1() {
