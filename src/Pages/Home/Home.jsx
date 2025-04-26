@@ -1,6 +1,4 @@
-import EducationRoadmap from "@/Components/EducationRoadmap";
 import Home1 from "./Partials/Home1";
-import Techstack from "@/Components/Techstack";
 import MediumArticles from "@/Components/MediumArticles";
 import AboutMe from "@/Components/AboutMe";
 import SocialLinks from "@/Components/SocialLinks";
@@ -12,9 +10,7 @@ const Home = () => {
       <div className="">
         <Home1 />
         <AboutMe />
-        <Techstack />
-        <FeaturedProjects/>
-        <EducationRoadmap />
+        <FeaturedProjects />
         <MediumArticles />
         <SocialLinks />
       </div>
