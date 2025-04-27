@@ -6,7 +6,7 @@ import myImg from "@/assets/avatar.png"; // Adjust the path as necessary
 
 function AboutMe() {
   return (
-    <div id="about" className="w-full py-12 bg-gray-900 text-white">
+    <div id="about" className="w-full py-12 text-white">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 px-4">
         <motion.div
           className="md:w-2/3 space-y-6"
