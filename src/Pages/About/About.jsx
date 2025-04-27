@@ -1,7 +1,54 @@
 import React from "react";
+import Techstack from "./Partials/Techstack";
+import EducationRoadmap from "@/Components/EducationRoadmap";
+import { DiJavascript1, DiReact, DiGit, DiSass } from "react-icons/di";
+import { FaVuejs } from "react-icons/fa";
+import {
+  SiTailwindcss,
+  SiAntdesign,
+  SiReactquery,
+  SiTypescript,
+  SiHtml5,
+  SiPostman,
+  SiJupyter,
+  SiHeroku, 
+} from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
+
+import { IoLogoGitlab } from "react-icons/io5";
+import { FaGithub, FaUbuntu, FaWindows } from "react-icons/fa";
 
 const About = () => {
-  return <div>About</div>;
+  const TechskillIcons = [
+    SiHtml5,
+    SiTailwindcss,
+    DiSass,
+    DiJavascript1,
+    SiTypescript,
+    DiReact,
+    SiReactquery,
+    DiGit,
+    FaVuejs,
+    SiAntdesign,
+  ];
+  const ToolskillIcons = [
+    FaWindows,
+    FaUbuntu,
+    VscVscode,
+    FaGithub,
+    SiPostman,
+    SiJupyter,
+    SiHeroku,
+    IoLogoGitlab,
+  ];
+
+  return (
+    <div>
+      <Techstack heading="Professional Skillset" icons={TechskillIcons} />
+      <Techstack heading="Tools i use" icons={ToolskillIcons} />
+      <EducationRoadmap />
+    </div>
+  );
 };
 
 export default About;

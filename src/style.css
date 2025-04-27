@@ -1,0 +1,44 @@
+html {
+  --section-background-color: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.582),
+    rgba(12, 8, 24, 0.904)
+  );
+
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.678),
+    rgba(12, 10, 22, 0.863)
+  );
+
+  --imp-text-color: #c770f0;
+}
+*{
+  background-color: #0e0a18;
+}
+.home-section {
+  position: relative;
+  /* background-image: url("./assets/home-bg.jpg"); */
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+}
+.heading {
+  font-size: 2.4em !important;
+  padding-left: 50px !important;
+}
+
+.heading-name {
+  font-size: 2.5em !important;
+  padding-left: 45px !important;
+}
+.Typewriter__wrapper {
+  font-size: 2.2em !important;
+  color: #be6adf !important;
+  font-weight: 600 !important;
+}
+.Typewriter__cursor {
+  font-size: 2.4em !important;
+  color: #b562d6 !important;
+}
