@@ -2,9 +2,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
-import myImg from "@/assets/avatar.png"; // Adjust the path as necessary
+import myImg from "@/assets/avatar.png";
 
-function AboutMe() {
+function HomeAboutMe() {
   return (
     <div id="about" className="w-full py-12 text-white">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 px-4">
@@ -58,4 +58,4 @@ function AboutMe() {
   );
 }
 
-export default AboutMe;
+export default HomeAboutMe;
