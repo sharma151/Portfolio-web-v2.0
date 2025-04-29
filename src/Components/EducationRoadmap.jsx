@@ -1,100 +1,130 @@
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable no-unused-vars */
+import React from "react";
 import { motion } from "framer-motion";
 
 const EducationRoadmap = () => {
-  const educationHistory = [
+  const educationData = [
     {
-      level: "Bachelor's Degree",
-      institution: "XXXXX University",
-      duration: "2020 - 2024",
+      year: "2020 - 2024",
+      title: "Oriental college of Technology, (MP) India",
+      degree: "Mac IT Master Degree",
       description:
-        "BSc in Computer Science and Information Technology, focusing on software development and systems design.",
+        "Harvard University is an educational institution that offers graduate, professional, and research programs.",
+      institution: "Harvard University, Cambridge, MA, United States",
     },
     {
-      level: "Senior School (+2)",
-      institution: "ABC +2 College",
-      duration: "2018 - 2020",
+      year: "2018 - 2020",
+      title: "BCA College Complete Course",
+      degree: "",
       description:
-        "Specialized in Science stream with focus on Physics, Math, and Computer Science.",
+        "Columbia University is an educational institution that offers graduate, professional, and research programs.",
+      institution: "Columbia University, New York, NY, United States",
     },
     {
-      level: "High School",
-      institution: "XYZ High School",
-      duration: "2012 - 2016",
+      year: "1999 - 2007",
+      title: "High / Higher Secondary School",
+      degree: "",
       description:
-        "Completed SEE with distinction, building foundational knowledge.",
+        "Princeton University is an educational institution that offers graduate, professional, and research programs.",
+      institution: "Princeton University, Princeton, NJ, United States",
     },
   ];
 
+  // Framer Motion Variants
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: -50 },
+  };
+
   return (
-    <section className="bg-white dark:bg-gray-900 py-16 px-4 sm:px-6 lg:px-8">
+    <div className="py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-center text-purple-700 mb-16">
-          🎓 Education Roadmap
-        </h2>
+        <h1 className="text-2xl md:text-3xl font-bold text-purple-500 mb-2">
+          Education & Experience
+        </h1>
+        <p className="text-gray-600 mb-8 md:mb-12 text-sm md:text-base">
+          Lorem Ipsum is simply dummy text of the printing
+        </p>
 
-        <div className="relative flex flex-col items-center sm:items-start sm:mx-auto sm:max-w-[90%] md:max-w-none">
-          {/* Vertical line */}
+        {/* Timeline Container */}
+        <div className="relative">
+          {/* Vertical Line */}
           <div
-            className="
-              absolute hidden sm:block w-1 !bg-purple-500 h-full 
-              left-[5%] md:left-[5%] lg:left-1/2 
-              transform lg:-translate-x-1/2 z-0 rounded-full
-            "
-          />
+            className="absolute left-[18px] md:left-[20%] top-0 bottom-0 w-0.5 bg-purple-500"
+            style={{
+              left: "calc(1.25rem + 3px)",
+            }}
+          ></div>
 
-          {educationHistory.map((item, index) => (
-            <motion.div
-              key={index}
-              className={`
-                w-full mb-20 flex flex-col sm:flex-row items-center relative z-10
-                ${index % 2 === 0 ? "lg:justify-start" : "lg:justify-end"}
-              `}
-              initial={{ opacity: 0, x: 100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{
-                duration: 0.8,
-                delay: 0.2 * index,
-              }}
-            >
-              {/* Dot */}
-              <div
-                className="
-                  hidden sm:block absolute 
-                  w-6 h-6 !bg-purple-600 rounded-full border-4 border-white
-                  left-[5%] md:left-[5%] lg:left-1/2 
-                  transform lg:-translate-x-1/2 
-                  z-20
-                "
-                style={{ top: "50%" }}
-              />
-
-              {/* Card */}
-              <div
-                className={`
-                  max-w-md sm:max-w-sm transition-all duration-300
-                  hover:shadow-[0_0_15px_3px_rgba(168,85,247,0.5)]
-                  rounded-xl border border-purple-500 dark:bg-gray-800 p-4
-                  sm:ml-20
-                  ${index % 2 === 0 ? "lg:ml-0 lg:mr-10" : "lg:ml-10 lg:mr-0"}
-                `}
+          {/* Timeline Items */}
+          <div className="space-y-8 md:space-y-12">
+            {educationData.map((item, index) => (
+              <motion.div
+                key={index}
+                className="relative pl-10 md:flex"
+                variants={cardVariants}
+                initial="hidden"
+                whileInView="visible"
+                exit="exit"
+                viewport={{ once: false, amount: 0.3 }}
+                transition={{
+                  duration: 0.6,
+                  ease: "easeInOut",
+                  delay: index * 0.2,
+                }}
               >
-                <h3 className="text-xl font-semibold text-purple-700">
-                  {item.level}
-                </h3>
-                <span className="text-sm text-gray-500 dark:text-gray-400 block mb-1">
-                  {item.institution} • {item.duration}
-                </span>
-                <p className="text-gray-700 dark:text-gray-300">
-                  {item.description}
-                </p>
-              </div>
-            </motion.div>
-          ))}
+                {/* Dot Indicator */}
+                <div
+                  className="absolute left-1 top-[9px] w-3 h-3 rounded-full bg-purple-500 border-2 border-white z-10"
+                  style={{
+                    left: "24px",
+                    transform: "translateX(-50%)",
+                  }}
+                ></div>
+
+                {/* Year (Mobile) */}
+                <div className="md:hidden text-sm font-medium text-purple-500 mb-1">
+                  {item.year}
+                </div>
+
+                {/* Year (Desktop) */}
+                <div
+                  className="hidden md:block w-1/5 pr-4 text-right"
+                  style={{ width: "20%" }}
+                >
+                  <h2 className="text-lg font-bold text-purple-500 mt-1">
+                    {item.year}
+                  </h2>
+                </div>
+
+                {/* Card Content */}
+                <div className="w-full md:pl-8" style={{ width: "80%" }}>
+                  <div className="border-purple-600 border p-4 md:p-6 rounded-lg shadow-sm">
+                    <h3 className="text-lg md:text-xl font-bold text-purple-400 mb-1 md:mb-2">
+                      {item.title}
+                    </h3>
+                    {item.degree && (
+                      <div className="flex items-center mb-2">
+                        <span className="text-gray-700 font-medium text-sm md:text-base">
+                          {item.degree}
+                        </span>
+                      </div>
+                    )}
+                    <p className="text-gray-600 text-sm md:text-base mb-3 md:mb-4">
+                      {item.description}
+                    </p>
+                    <p className="text-gray-500 font-medium text-xs md:text-sm">
+                      {item.institution}
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
