@@ -1,38 +1,25 @@
-html {
-  --section-background-color: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
-  );
-
-  --image-gradient: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
-  );
-
-  --imp-text-color: #c770f0;
-}
-*{
+/* body {
   background-color: #0e0a18;
-}
-.home-section {
-  position: relative;
-  /* background-image: url("./assets/home-bg.jpg"); */
-  background-position: top center;
-  background-repeat: no-repeat;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
-}
-.heading {
-  font-size: 2.4em !important;
-  padding-left: 50px !important;
+} */
+
+/* style.css */
+:root {
+  --bg-color: #f1ecec;
+  --text-color: #1f2937;
+  
 }
 
-.heading-name {
-  font-size: 2.5em !important;
-  padding-left: 45px !important;
+.dark {
+  --bg-color: #0e0a18;
+  --text-color: #d1d5db;
 }
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+
 .Typewriter__wrapper {
   font-size: 2.2em !important;
   color: #be6adf !important;
@@ -42,3 +29,77 @@ html {
   font-size: 2.4em !important;
   color: #b562d6 !important;
 }
+.react-activity-calendar__footer {
+  font-size: 10px;
+  color: var(--text-color);
+  padding: 0px 10px;
+}
+.react-activity-calendar__scroll-container {
+  overflow-y: hidden !important;
+}
+.react-activity-calendar__calendar {
+  /* overflow-y: hidden !important; */
+  padding: 10px;
+  width: 100% !important;
+}
+/* .react-activity-calendar {
+  overflow-y: hidden !important;
+} */
+.react-activity-calendar__legend-month {
+  color: var(--text-color);
+  font-size: 20px;
+}
+
+/* about page image animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Custom purple toast styles */
+.Toastify__toast--success {
+  background-color: #6b46c1 !important; /* Purple shade for success */
+  color: #ffffff !important;
+}
+.Toastify__toast--error {
+  background-color: #9f7aea !important; /* Lighter purple for error */
+  color: #ffffff !important;
+}
+.Toastify__progress-bar--success {
+  background-color: #553c9a !important; /* Darker purple for progress bar */
+}
+.Toastify__progress-bar--error {
+  background-color: #805ad5 !important; /* Medium purple for progress bar */
+}
+.Toastify__close-button {
+  color: #ffffff !important;
+}
+
+/* custom scrollbar 
+ */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a122d;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8e24b8;
+  border-radius: 4px;
+  border: 2px solid transparent;
+}
+
+/* ::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+} */
