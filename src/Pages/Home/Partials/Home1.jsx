@@ -11,7 +11,7 @@ function Home1() {
   };
 
   return (
-    <section className="relative w-full min-h-screen home-section" id="home">
+    <section className="relative w-full min-h-screen " id="home">
       {/* <Particle /> */}
       <div className="w-full px-6 py-12 md:px-20">
         <motion.div
@@ -23,7 +23,7 @@ function Home1() {
         >
           <div className="md:w-7/12 w-full space-y-6 ">
             <motion.h1
-              className="text-4xl md:text-5xl font-bold text-gray-800"
+              className="text-4xl md:text-5xl font-bold text-[var(--text-color)]"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }} // Delay for staggered effect
@@ -34,7 +34,7 @@ function Home1() {
               </span>
             </motion.h1>
             <motion.h1
-              className="text-4xl md:text-5xl font-bold text-gray-800"
+              className="text-4xl md:text-5xl font-bold text-[var(--text-color)]"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 1 }} // Delay for staggered effect
