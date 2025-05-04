@@ -1,7 +1,6 @@
 import Home1 from "./Partials/Home1";
 import MediumArticles from "@/Components/MediumArticles";
 import HomeAboutMe from "@/Components/HomeAboutMe";
-import SocialLinks from "@/Components/SocialLinks";
 import FeaturedProjects from "@/Components/FeaturedProjects";
 import ContactUs from "@/Components/ContactUS";
 

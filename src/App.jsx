@@ -1,3 +1,4 @@
+/* eslint-disable import/namespace */
 import React, { useEffect, useState } from "react";
 import AppRoutes from "@/Routes/AppRoutes";
 import { pdfjs } from "react-pdf";
@@ -22,7 +23,7 @@ const App = () => {
     <>
       {" "}
       {loading ? (
-        <Spinner />
+        <Spinner width={40} height={40}/>
       ) : (
         <>
           <AppRoutes />
