@@ -1,14 +1,15 @@
-import React from "react";
 import { RotatingLines } from "react-loader-spinner";
 
-const Spinner = () => {
+// eslint-disable-next-line react/prop-types
+const Spinner = ({ width, height }) => {
   return (
-    <div className="flex items-center justify-center h-screen">
+    <div className="flex items-center justify-center h-screen bg-[#0e0a18]">
       <RotatingLines
         visible={true}
-        height="56"
-        width="56"
+        height={height}
+        width={width}
         strokeWidth="5"
+        backgroundColor="transparent"
         strokeColor="#AD46FF"
         animationDuration="0.25"
         ariaLabel="rotating-lines-loading"
