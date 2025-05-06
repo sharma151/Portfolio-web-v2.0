@@ -6,14 +6,15 @@ function Techstack({ heading, icons }) {
   return (
     <div className="px-4 py-4 w-[90%] mx-auto text-center">
       <motion.h2
-        className="text-3xl md:text-4xl font-semibold text-white mb-10"
+        className="text-3xl md:text-4xl font-semibold text-[var(--text-color)] mb-10"
         initial={{ opacity: 0, y: 50 }} // Starting position (invisible and 50px below)
         whileInView={{ opacity: 1, y: 0 }} // Animation on scroll into view
         viewport={{ once: true }} // Trigger animation only once
         transition={{ duration: 0.8 }} // Duration of the animation
       >
         {heading.split(" ").map((word, idx) =>
-          word.toLowerCase() === "skillset" || word.toLowerCase() === "tools" ? (
+          word.toLowerCase() === "skillset" ||
+          word.toLowerCase() === "tools" ? (
             <span key={idx} className="text-[#b562d6]">
               {word}{" "}
             </span>
@@ -33,7 +34,7 @@ function Techstack({ heading, icons }) {
         {icons.map((Icon, index) => (
           <motion.div
             key={index}
-            className="w-24 h-24 bg-black border border-[#b562d6] rounded-lg shadow-md flex items-center justify-center text-white text-4xl transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_15px_#b562d6]"
+            className="w-24 h-24  border border-[#b562d6] rounded-lg shadow-md flex items-center justify-center text-[var(--text-color)] text-4xl transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_15px_#b562d6]"
             whileHover={{ scale: 1.1 }} // Scale up on hover
             initial={{ opacity: 0, y: 30 }} // Initial position off-screen
             animate={{ opacity: 1, y: 0 }} // Animate to visible position
