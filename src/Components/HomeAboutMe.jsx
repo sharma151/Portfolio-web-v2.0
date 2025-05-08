@@ -6,7 +6,7 @@ import myImg from "@/assets/avatar.png";
 
 function HomeAboutMe() {
   return (
-    <div id="about" className="w-full py-12 text-white">
+    <div id="about" className="w-full py-12 text-[var(--text-color)]">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 px-4">
         <motion.div
           className="md:w-2/3 space-y-6"
@@ -50,7 +50,7 @@ function HomeAboutMe() {
           transition={{ duration: 1 }}
         >
           <Tilt>
-            <img src={myImg} alt="avatar" className="rounded-xl shadow-lg" />
+            <img src={myImg} alt="avatar"  />
           </Tilt>
         </motion.div>
       </div>
