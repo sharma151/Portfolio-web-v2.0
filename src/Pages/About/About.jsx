@@ -11,12 +11,14 @@ import {
   SiHtml5,
   SiPostman,
   SiJupyter,
-  SiHeroku, 
+  SiHeroku,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
 import { IoLogoGitlab } from "react-icons/io5";
 import { FaGithub, FaUbuntu, FaWindows } from "react-icons/fa";
+import GithubCalendar from "./Partials/GithubCalender";
+import AboutCard from "./Partials/AboutCard";
 
 const About = () => {
   const TechskillIcons = [
@@ -44,9 +46,11 @@ const About = () => {
 
   return (
     <div>
+      <AboutCard />
       <Techstack heading="Professional Skillset" icons={TechskillIcons} />
       <Techstack heading="Tools i use" icons={ToolskillIcons} />
       <EducationRoadmap />
+      <GithubCalendar />
     </div>
   );
 };
