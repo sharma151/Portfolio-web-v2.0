@@ -11,19 +11,19 @@ function AboutMe() {
       viewport={{ once: true }} // Trigger animation only once
       transition={{ duration: 0.8 }} // Duration of the animation
     >
-      <div className="text-white">
-        <p className="text-base md:text-lg leading-relaxed md:leading-relaxed text-gray-300 md:text-justify">
+      <div className="text-[var(--text-color)]">
+        <p className="text-base md:text-lg leading-relaxed md:leading-relaxed text-[var(--text-color)] md:text-justify">
           Hi, I'm{" "}
-          <span className="text-purple-400 font-semibold">Saurav Sharma</span>{" "}
+          <span className="text-purple-600 font-semibold">Saurav Sharma</span>{" "}
           from{" "}
-          <span className="text-purple-400 font-semibold">
+          <span className="text-purple-600 font-semibold">
             Darbhanga, India
           </span>{" "}
           🇮🇳.
           <br />
           <br />
           I'm a passionate Frontend Developer at{" "}
-          <span className="text-purple-300 font-semibold">
+          <span className="text-purple-600 font-semibold">
             Young Innovation Pvt. Ltd., Nepal
           </span>{" "}
           🇳🇵, where I specialize in building secure, scalable, and user-centric
@@ -35,28 +35,28 @@ function AboutMe() {
           Over the years, I've gained hands-on experience in cybersecurity, web
           development, software engineering, and testing. My internships with
           organizations like{" "}
-          <span className="text-purple-300 font-semibold">
+          <span className="text-purple-600 font-semibold">
             All India IT Association
           </span>
           ,{" "}
-          <span className="text-purple-300 font-semibold">
+          <span className="text-purple-600 font-semibold">
             MP Police Cyber Cell
           </span>
           ,{" "}
-          <span className="text-purple-300 font-semibold">
+          <span className="text-purple-600 font-semibold">
             Persistent Systems
           </span>
           , and{" "}
-          <span className="text-purple-300 font-semibold">Oasis Infobyte</span>{" "}
+          <span className="text-purple-600 font-semibold">Oasis Infobyte</span>{" "}
           sharpened my technical skills and problem-solving mindset 🧠.
           <br />
           <br />
           I've also strengthened my expertise through certifications like the{" "}
-          <span className="text-purple-300 font-semibold">
+          <span className="text-purple-600 font-semibold">
             IBM Cybersecurity Professional Certification
           </span>{" "}
           and the{" "}
-          <span className="text-purple-300 font-semibold">
+          <span className="text-purple-600 font-semibold">
             Meta Frontend Development Program
           </span>
           .
@@ -67,26 +67,26 @@ function AboutMe() {
         </p>
 
         <div className="mt-8">
-          <h3 className="text-xl md:text-2xl font-semibold mb-4 text-purple-300 text-center">
+          <h3 className="text-xl md:text-2xl font-semibold mb-4 text-purple-600 text-center">
             Things I ❤️ Besides Coding
           </h3>
-          <ul className="list-disc ml-6 space-y-2 text-gray-300">
+          <ul className="list-disc ml-6 space-y-2 text-[var(--text-color)]">
             <li className="flex items-start">
-              <ImPointRight className="text-purple-400 mr-2 mt-1 flex-shrink-0" />
+              <ImPointRight className="text-purple-600 mr-2 mt-1 flex-shrink-0" />
               Playing Games 🎮
             </li>
             <li className="flex items-start">
-              <ImPointRight className="text-purple-400 mr-2 mt-1 flex-shrink-0" />
+              <ImPointRight className="text-purple-600 mr-2 mt-1 flex-shrink-0" />
               Listening to Music 🎵
             </li>
             <li className="flex items-start">
-              <ImPointRight className="text-purple-400 mr-2 mt-1 flex-shrink-0" />
+              <ImPointRight className="text-purple-600 mr-2 mt-1 flex-shrink-0" />
               Hiking / Trekking ⛰️
             </li>
           </ul>
         </div>
 
-        <p className="mt-8 md:mt-10 text-center italic text-purple-400 text-base md:text-lg">
+        <p className="mt-8 md:mt-10 text-center italic text-purple-600 text-base md:text-lg">
           "Strive to build things that make a difference ✨"
         </p>
       </div>

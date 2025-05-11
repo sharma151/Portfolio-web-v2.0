@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa6";
 
 const ScrollToTop = () => {
@@ -31,7 +31,7 @@ const ScrollToTop = () => {
   return (
     <button
       onClick={scrollToTop}
-      className="fixed bottom-10  md:bottom-20 right-6 bg-[#AD46FF] text-white p-3 rounded-full shadow-lg hover:bg-purple-700 transition duration-300"
+      className="fixed bottom-10  md:bottom-20 right-6 bg-[#AD46FF] text-[var(--text-color)] p-3 rounded-full shadow-lg hover:bg-purple-700 transition duration-300"
       aria-label="Scroll to top"
     >
       <FaArrowUp className="w-5 h-5" />
