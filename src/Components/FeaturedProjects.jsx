@@ -1,8 +1,10 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { motion } from "framer-motion";
 import ProjectCard from "@/Components/ProjectCard";
 
+// eslint-disable-next-line react/prop-types
 function FeaturedProjects({ heading, projects }) {
   return (
     <motion.section
