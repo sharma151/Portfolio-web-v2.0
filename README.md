@@ -23,9 +23,9 @@ A modern, responsive, and animated personal portfolio website built with **React
 ├── src/
 │   ├── assets/            # Images and icons
 │   ├── components/        # Reusable UI components
+|   ├── Layout/            # Main layout component wrapping pages
 │   ├── pages/             # Page components: Home, About, Projects, Resume
-│   ├── router/            # React Router config
-│   ├── themes/            # Theme context and provider
+│   ├── routes/            # React Router config
 │   ├── App.jsx
 │   ├── main.jsx
 │   └── index.css
