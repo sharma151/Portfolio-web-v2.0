@@ -1,32 +1,44 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const EducationRoadmap = () => {
   const educationData = [
     {
-      year: "2020 - 2024",
-      title: "Oriental college of Technology, (MP) India",
-      degree: "Mac IT Master Degree",
+      year: "2024 - Present",
+      title: "Young Innovation pvt ltd (NP)",
+      degree: "Frontend Developer",
+      link: "https://younginnovations.com.np/",
       description:
-        "Harvard University is an educational institution that offers graduate, professional, and research programs.",
-      institution: "Harvard University, Cambridge, MA, United States",
+        " React Frontend Developer | Building clean, responsive UIs with modern tools like TypeScript, TanStack Query, and Tailwind CSS. Passionate about scalable components, smooth user experiences, and always learning. Open to new challenges and growth opportunities!",
+      // institution: "Harvard University, Cambridge, MA, United States",
+    },
+    {
+      year: "2020 - 2024",
+      title: "Oriental college of Technology",
+      degree: "B.Tech - Computer science Engineering",
+      link: "https://oriental.ac.in/",
+      description:
+        "Completed B.Tech in Computer Science and Engineering with a specialization in Cyber Security. Gained a strong foundation in core engineering disciplines including Civil, Electrical, and Mechanical, along with in-depth knowledge in Software Engineering, Cryptography, Ethical Hacking, Mobile Forensics, IT and Web Technologies, Hardware Security, OOPs, Data Structures and Algorithms, DBMS, Python, Operating Systems, Network Security, Digital Forensics, and more.",
+      institution: "Bhopal (MP), India",
     },
     {
       year: "2018 - 2020",
-      title: "BCA College Complete Course",
-      degree: "",
+      title: "Dav sushil kedia vishwa Bharti",
+      degree: "Senior Secondary Schooling",
+      link: "https://davnepal.com/",
       description:
-        "Columbia University is an educational institution that offers graduate, professional, and research programs.",
-      institution: "Columbia University, New York, NY, United States",
+        "Completed senior secondary education (Class 11–12) under CBSE with a focus on the Science stream, specializing in Physics, Chemistry, Mathematics, Computer Science, English, and Physical Education. ",
+      institution: "Kathmandu, Nepal",
     },
     {
-      year: "1999 - 2007",
-      title: "High / Higher Secondary School",
-      degree: "",
-      description:
-        "Princeton University is an educational institution that offers graduate, professional, and research programs.",
-      institution: "Princeton University, Princeton, NJ, United States",
+      year: "2015 - 2018",
+      title: " Gyan Bharti Public School",
+      degree: "Higher Secondary School",
+      link: "http://gbpsdbg.org/",
+      description: " Darbhanga (BR), India ",
+      // institution: "Princeton University, Princeton, NJ, United States",
     },
   ];
 
@@ -101,20 +113,22 @@ const EducationRoadmap = () => {
                 {/* Card Content */}
                 <div className="w-full md:pl-8" style={{ width: "80%" }}>
                   <div className="border-purple-600 border p-4 md:p-6 rounded-lg shadow-sm">
-                    <h3 className="text-lg md:text-xl font-bold text-purple-400 mb-1 md:mb-2">
-                      {item.title}
-                    </h3>
+                    <Link to={item.link}>
+                      <h3 className="text-lg md:text-xl font-bold text-purple-400 mb-1 md:mb-2">
+                        {item.title}
+                      </h3>
+                    </Link>
                     {item.degree && (
                       <div className="flex items-center mb-2">
-                        <span className="text-gray-700 font-medium text-sm md:text-base">
+                        <span className="text-[var(--text-color)] font-medium text-sm md:text-base">
                           {item.degree}
                         </span>
                       </div>
                     )}
-                    <p className="text-gray-600 text-sm md:text-base mb-3 md:mb-4">
+                    <p className="text-[var(--text-color)] text-sm md:text-base mb-3 md:mb-4">
                       {item.description}
                     </p>
-                    <p className="text-gray-500 font-medium text-xs md:text-sm">
+                    <p className="text-[var(--text-color)] font-medium text-xs md:text-sm">
                       {item.institution}
                     </p>
                   </div>
