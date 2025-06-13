@@ -8,7 +8,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 function SocialLinks() {
   return (
-    <div className="w-full bg-gray-800 text-white py-10">
+    <div className="w-full  text-[var(--text-color)] py-10">
       <div className="max-w-4xl mx-auto text-center space-y-4">
         <h1 className="text-3xl font-bold">FIND ME ON</h1>
         <p className="text-lg">
@@ -20,7 +20,7 @@ function SocialLinks() {
               href="https://github.com/sharma151"
               target="_blank"
               rel="noreferrer"
-              className="text-white hover:text-purple-400 transition"
+              className="text-[var(--text-color)] hover:text-purple-400 transition"
             >
               <AiFillGithub />
             </a>
@@ -30,7 +30,7 @@ function SocialLinks() {
               href="https://twitter.com/connect2saurav"
               target="_blank"
               rel="noreferrer"
-              className="text-white hover:text-purple-400 transition"
+              className="text-[var(--text-color)] hover:text-purple-400 transition"
             >
               <AiOutlineTwitter />
             </a>
@@ -40,7 +40,7 @@ function SocialLinks() {
               href="https://www.linkedin.com/in/saurav0402/"
               target="_blank"
               rel="noreferrer"
-              className="text-white hover:text-purple-400 transition"
+              className="text-[var(--text-color)] hover:text-purple-400 transition"
             >
               <FaLinkedinIn />
             </a>
@@ -50,7 +50,7 @@ function SocialLinks() {
               href="https://www.instagram.com/sharma_saurav_1303/"
               target="_blank"
               rel="noreferrer"
-              className="text-white hover:text-purple-400 transition"
+              className="text-[var(--text-color)] hover:text-purple-400 transition"
             >
               <AiFillInstagram />
             </a>
