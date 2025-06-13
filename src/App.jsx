@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import AppRoutes from "@/Routes/AppRoutes";
 import { pdfjs } from "react-pdf";
 import Spinner from "@/Components/Spinner";
-import ScrollToTop from "./Components/ScrollToTopTemp";
+import ScrollToTop from "./Components/ScrollToTop";
 
 // Set the worker source for react-pdf
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
