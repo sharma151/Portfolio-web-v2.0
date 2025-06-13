@@ -7,28 +7,28 @@ import ContactUs from "@/Components/ContactUS";
 const Home = () => {
   const projects = [
     {
-      title: "Social media Website",
+      title: "Social media platform",
       image:
         "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       github: "https://github.com/your-username/portfolio",
       live: "https://yourportfolio.live",
-      info: "This is my personal portfolio website where I showcase my projects and skills.",
+      info: "A full-featured social media platform built with React, implementing user authentication, photo posting, user search, and profile management. Utilizes Context API, Redux, React Hooks, component-based architecture, API integration with interceptors, and best practices for scalable, professional-grade development.",
     },
     {
-      title: "Business card Generator",
+      title: "InfoSnap",
       image:
         "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       github: "https://github.com/your-username/blog-app",
       live: "https://yourblogapp.live",
-      info: "A blogging platform where users can create, read, and comment on posts.",
+      info: "A versatile generator hub built with React and styled using Sass/SCSS, allowing users to create barcodes, QR codes, and digital business cards by simply entering their data. Designed for ease of use with a clean, responsive interface.",
     },
     {
-      title: "Todolist App",
+      title: "Task Schedular",
       image:
         "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       github: "https://github.com/your-username/blog-app",
       live: "https://yourblogapp.live",
-      info: "A blogging platform where users can create, read, and comment on posts.",
+      info: "A task scheduler application built with TypeScript, React, and Tailwind CSS. Allows users to create, edit, delete, and save tasks based on specific dates. Designed with a clean UI and structured for scalability and maintainability.",
     },
   ];
   return (
