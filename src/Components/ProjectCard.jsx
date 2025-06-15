@@ -17,7 +17,7 @@ function ProjectCard({ title, image, github, live, info, index }) {
         src={image}
         alt={title}
         loading="lazy"
-        className="rounded-md mb-4 w-full h-48 object-cover"
+        className="rounded-md mb-4 w-full h-48 sm:h-44 xs:h-40 object-cover"
       />
       <h3 className="text-[var(--text-color)] text-xl font-semibold mb-4">
         {title}
