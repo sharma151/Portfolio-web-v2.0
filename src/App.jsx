@@ -4,6 +4,7 @@ import AppRoutes from "@/Routes/AppRoutes";
 import { pdfjs } from "react-pdf";
 import Spinner from "@/Components/Spinner";
 import ScrollToTop from "./Components/ScrollToTop";
+import { inject } from "@vercel/analytics";
 
 // Set the worker source for react-pdf
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
@@ -19,11 +20,15 @@ const App = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    inject(); // ✅ Initialize analytics on mount
+  }, []);
+
   return (
     <>
       {" "}
       {loading ? (
-        <Spinner width={40} height={40}/>
+        <Spinner width={40} height={40} />
       ) : (
         <>
           <AppRoutes />
