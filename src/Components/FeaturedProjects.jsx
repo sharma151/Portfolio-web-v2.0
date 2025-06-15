@@ -1,17 +1,10 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { motion } from "framer-motion";
 import ProjectCard from "@/Components/ProjectCard";
 
 function FeaturedProjects({ heading, projects }) {
   return (
-    <motion.section
-      className="py-16 px-6 text-[var(--text-color)] min-h-screen"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      viewport={{ once: true, amount: 0.2 }}
-    >
+    <section className="py-16 px-6 text-[var(--text-color)] min-h-screen">
       <div className="max-w-6xl mx-auto overflow-x-visible">
         <h2 className="text-4xl font-bold mb-12 text-center text-purple-800">
           {heading}
@@ -23,7 +16,7 @@ function FeaturedProjects({ heading, projects }) {
           ))}
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 }
 
