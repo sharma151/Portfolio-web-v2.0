@@ -6,13 +6,13 @@ import ProjectCard from "@/Components/ProjectCard";
 function FeaturedProjects({ heading, projects }) {
   return (
     <motion.section
-      className="py-16 px-6 text-[var(--text-color)]"
+      className="py-16 px-6 text-[var(--text-color)] min-h-screen"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.2 }}
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto overflow-x-visible">
         <h2 className="text-4xl font-bold mb-12 text-center text-purple-800">
           {heading}
         </h2>
