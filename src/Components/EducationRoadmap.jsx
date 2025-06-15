@@ -55,9 +55,9 @@ const EducationRoadmap = () => {
         <h1 className="text-2xl md:text-3xl font-bold text-purple-500 mb-2">
           Education & Experience
         </h1>
-        <p className="text-gray-600 mb-8 md:mb-12 text-sm md:text-base">
+        {/* <p className="text-gray-600 mb-8 md:mb-12 text-sm md:text-base">
           Lorem Ipsum is simply dummy text of the printing
-        </p>
+        </p> */}
 
         {/* Timeline Container */}
         <div className="relative">
