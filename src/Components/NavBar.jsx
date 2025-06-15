@@ -10,7 +10,7 @@ import {
 } from "react-icons/ai";
 import { CgGitFork, CgFileDocument } from "react-icons/cg";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
-import logo from "../Assets/logo.png";
+import logo from "../assets/logo.png";
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
