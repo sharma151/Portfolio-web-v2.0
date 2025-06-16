@@ -4,6 +4,7 @@ import Home from "@/Pages/Home/Home";
 import About from "@/Pages/About/About";
 import Projects from "@/Pages/Projects/Projects";
 import ResumePage from "@/Pages/Resume/ResumePage";
+import PageNotFound from "@/Components/PageNotFound";
 const AppRoutes = () => {
   return (
     <Router>
@@ -14,6 +15,7 @@ const AppRoutes = () => {
           <Route path="resume" element={<ResumePage />} />
           <Route path="projects" element={<Projects />} />
         </Route>
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </Router>
   );
