@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-import React from "react";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import myImg from "@/assets/avatar.png";
@@ -18,29 +16,36 @@ function HomeAboutMe() {
             LET ME <span className="text-purple-400">INTRODUCE</span> MYSELF
           </h1>
           <p className="text-lg leading-relaxed">
-            I am a tech enthusiast, passionate about programming and developing
-            innovative solutions 🤷‍♂️
+            I&apos;m a frontend developer with a strong interest in building
+            responsive, scalable, and accessible web interfaces.
             <br />
-            <br />I am fluent in classics like{" "}
+            <br />
+            My current focus is on modern web technologies like{" "}
             <span className="text-purple-400 font-semibold">
-              C++, Javascript.
-            </span>
-            <br />
-            <br />
-            My field of interest includes building new{" "}
+              React.js
+            </span> and{" "}
+            <span className="text-purple-400 font-semibold">Next.js</span>, and
+            I actively work with tools such as{" "}
             <span className="text-purple-400 font-semibold">
-              Web Technologies and Products
-            </span>
-            , and exploring{" "}
+              TypeScript, Tailwind CSS
+            </span>{" "}
+            and{" "}
             <span className="text-purple-400 font-semibold">
-              cybersecurity.
-            </span>
+              TanStack Query
+            </span>{" "}
+            to create efficient and maintainable UI solutions.
             <br />
-            <br />I love working with{" "}
-            <span className="text-purple-400 font-semibold">Node.js</span> and
-            modern JavaScript libraries like{" "}
-            <span className="text-purple-400 font-semibold">React.js</span> and{" "}
-            <span className="text-purple-400 font-semibold">Next.js</span>.
+            <br />
+            I’m continually expanding my knowledge in frontend development and
+            enjoy exploring best practices in performance, accessibility, and
+            component architecture.
+            <br />
+            <br />
+            I&apos;m also looking forward to deepening my understanding of{" "}
+            <span className="text-purple-400 font-semibold">
+              backend technologies and DevOps
+            </span>{" "}
+            to become a more well-rounded engineer.
           </p>
         </motion.div>
         <motion.div
@@ -50,7 +55,7 @@ function HomeAboutMe() {
           transition={{ duration: 1 }}
         >
           <Tilt>
-            <img src={myImg} alt="avatar"  />
+            <img src={myImg} alt="avatar" />
           </Tilt>
         </motion.div>
       </div>

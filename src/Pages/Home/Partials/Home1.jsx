@@ -39,8 +39,8 @@ function Home1() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 1 }} // Delay for staggered effect
             >
-              I'M
-              <span className="text-purple-500"> Saurav Sharma</span>
+              I&apos;M
+              <span className="text-purple-400"> Saurav Sharma</span>
             </motion.h1>
 
             <Type />

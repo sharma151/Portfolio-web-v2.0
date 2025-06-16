@@ -11,7 +11,7 @@ function About() {
       {/* Left Section */}
       <div className="md:w-7/12 flex flex-col justify-start">
         <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center  text-[var(--text-color)]">
-          Know Who <span className="text-purple-500">I&apos;M 🚀</span>
+          Know Who <span className="text-purple-400">I&apos;M 🚀</span>
         </h1>
 
         <AboutMe />

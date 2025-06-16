@@ -11,7 +11,7 @@ const EducationRoadmap = () => {
       degree: "Frontend Developer",
       link: "https://younginnovations.com.np/",
       description:
-        " React Frontend Developer | Building clean, responsive UIs with modern tools like TypeScript, TanStack Query, and Tailwind CSS. Passionate about scalable components, smooth user experiences, and always learning. Open to new challenges and growth opportunities!",
+        " React Frontend Developer | Building clean, responsive UIs using modern technologies like TypeScript, TanStack Query, and Tailwind CSS. Focused on scalable components, intuitive user experiences, and continuous improvement. Open to new challenges and growth opportunities.",
       // institution: "Harvard University, Cambridge, MA, United States",
     },
     {
