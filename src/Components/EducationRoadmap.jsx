@@ -52,7 +52,7 @@ const EducationRoadmap = () => {
   return (
     <div className="py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-2xl md:text-3xl font-bold text-purple-500 mb-4">
+        <h1 className="text-2xl md:text-3xl font-bold text-purple-400 mb-10">
           Education & Experience
         </h1>
         {/* <p className="text-gray-600 mb-8 md:mb-12 text-sm md:text-base">
@@ -63,7 +63,7 @@ const EducationRoadmap = () => {
         <div className="relative">
           {/* Vertical Line */}
           <div
-            className="absolute left-[18px] md:left-[20%] top-0 bottom-0 w-0.5 bg-purple-500"
+            className="absolute left-[18px] md:left-[20%] top-0 bottom-0 w-0.5 bg-purple-400"
             style={{
               left: "calc(1.25rem + 3px)",
             }}
@@ -88,7 +88,7 @@ const EducationRoadmap = () => {
               >
                 {/* Dot Indicator */}
                 <div
-                  className="absolute left-1 top-[9px] w-3 h-3 rounded-full bg-purple-500 border-2 border-white z-10"
+                  className="absolute left-1 top-[9px] w-3 h-3 rounded-full bg-purple-400 border-2 border-white z-10"
                   style={{
                     left: "24px",
                     transform: "translateX(-50%)",
@@ -96,7 +96,7 @@ const EducationRoadmap = () => {
                 ></div>
 
                 {/* Year (Mobile) */}
-                <div className="md:hidden text-sm font-medium text-purple-500 mb-1">
+                <div className="md:hidden text-sm font-medium text-purple-400 mb-1">
                   {item.year}
                 </div>
 
@@ -105,14 +105,14 @@ const EducationRoadmap = () => {
                   className="hidden md:block w-1/5 pr-4 text-right"
                   style={{ width: "20%" }}
                 >
-                  <h2 className="text-lg font-bold text-purple-500 mt-1">
+                  <h2 className="text-lg font-bold text-purple-400 mt-1">
                     {item.year}
                   </h2>
                 </div>
 
                 {/* Card Content */}
                 <div className="w-full md:pl-8" style={{ width: "80%" }}>
-                  <div className="border-purple-600 border p-4 md:p-6 rounded-lg shadow-sm">
+                  <div className="border-purple-400 border p-4 md:p-6 rounded-lg shadow-sm">
                     <Link to={item.link}>
                       <h3 className="text-lg md:text-xl font-bold text-purple-400 mb-1 md:mb-2">
                         {item.title}

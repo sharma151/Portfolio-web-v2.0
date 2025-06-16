@@ -23,7 +23,7 @@ function About() {
         <img
           src={laptopImg}
           alt="About Main"
-          className="w-72 md:w-96 object-contain animate-float rounded-lg shadow-lg "
+          className="w-72 hidden md:flex md:w-96 object-contain animate-float rounded-lg shadow-lg "
         />
 
         <img
