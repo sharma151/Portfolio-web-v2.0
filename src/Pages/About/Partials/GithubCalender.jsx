@@ -5,7 +5,7 @@ function Github() {
   return (
     <div className="flex flex-col items-center pb-4">
       <h1 className="text-3xl font-bold pb-5 text-center text-[var(--text-color)]">
-        Days I <span className="text-purple-500">Code</span>
+        Days I <span className="text-purple-400">Code</span>
       </h1>
 
       <GitHubCalendar

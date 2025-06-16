@@ -36,7 +36,7 @@ const MediumArticles = () => {
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 1 }}
       >
-        <h2 className="text-3xl font-bold text-center mb-12 text-purple-700">
+        <h2 className="text-3xl font-bold text-center mb-12 text-purple-400">
           📝 Latest Articles
         </h2>
 
@@ -74,7 +74,7 @@ const MediumArticles = () => {
                     className="w-full h-48 object-cover rounded-md"
                   />
                   <div className="p-5">
-                    <h3 className="text-lg font-semibold text-purple-800">
+                    <h3 className="text-lg font-semibold text-purple-400">
                       {article.title}
                     </h3>
                     <p className="text-sm text-gray-600 mt-2 line-clamp-3">

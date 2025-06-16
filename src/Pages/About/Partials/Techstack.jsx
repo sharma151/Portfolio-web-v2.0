@@ -15,7 +15,7 @@ function Techstack({ heading, icons }) {
         {heading.split(" ").map((word, idx) =>
           word.toLowerCase() === "skillset" ||
           word.toLowerCase() === "tools" ? (
-            <span key={idx} className="text-[#b562d6]">
+            <span key={idx} className="text-purple-400">
               {word}{" "}
             </span>
           ) : (
