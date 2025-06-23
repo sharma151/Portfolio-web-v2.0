@@ -28,7 +28,7 @@ const MediumArticles = () => {
   }, []);
 
   return (
-    <section ref={ref} className="py-16 px-4 max-w-6xl mx-auto">
+    <section ref={ref} className="py-16 px-8 md:px-10 max-w-6xl mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}

@@ -4,8 +4,8 @@ import ProjectCard from "@/Components/ProjectCard";
 
 function FeaturedProjects({ heading, projects }) {
   return (
-    <section className="py-16 px-6 text-[var(--text-color)] min-h-screen">
-      <div className="max-w-6xl mx-auto overflow-x-visible">
+    <section className="py-16 px-8 md:px-10  text-[var(--text-color)] ">
+      <div className="max-w-5xl mx-auto overflow-x-visible">
         <h2 className="text-4xl font-bold mb-12 text-center text-purple-400">
           {heading}
         </h2>
