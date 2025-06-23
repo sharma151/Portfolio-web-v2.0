@@ -45,7 +45,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="max-w-5xl mx-3 md:mx-5 lg:mx-auto px-1 sm:px-6 lg:px-8 py-8   rounded-2xl shadow-2xl backdrop-blur-lg border border-white/10">
+    <div className="max-w-5xl mx-5 md:mx-5 lg:mx-auto px-1 sm:px-6 lg:px-8 py-8   rounded-2xl shadow-2xl backdrop-blur-lg border border-white/10">
       <div className="grid md:grid-cols-2 gap-8 md:gap-12">
         {/* Left Side - Contact Information */}
         <div className="space-y-8 text-[var(--text-color)]/90 relative px-4 sm:px-0">

@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
-import { motion } from "framer-motion"; // Import motion from framer-motion
-import homeLogo from "@/assets/home-main.svg";
-import Type from "@/Components/Type";
+import { motion } from 'framer-motion'; // Import motion from framer-motion
+import homeLogo from '@/assets/home-main.svg';
+import Type from '@/Components/Type';
 
 function Home1() {
   // Define animation variants
@@ -11,9 +11,8 @@ function Home1() {
   };
 
   return (
-    <section className="relative w-full min-h-screen " id="home">
-      {/* <Particle /> */}
-      <div className="w-full px-6 py-12 md:px-20">
+    <section className="relative w-full " id="home">
+      <div className="w-full px-6 py-12 md:px-20 xl:px-52 lg:py-20">
         <motion.div
           className="flex flex-col md:flex-row items-center justify-between"
           initial="hidden"
@@ -28,7 +27,7 @@ function Home1() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }} // Delay for staggered effect
             >
-              Hi There!{" "}
+              Hi There!{' '}
               <span role="img" aria-labelledby="wave" className="inline-block">
                 👋🏻
               </span>
