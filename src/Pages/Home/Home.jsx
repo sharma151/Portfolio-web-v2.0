@@ -18,8 +18,8 @@ const Home = () => {
       title: 'InfoSnap',
       image:
         'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      github: null,
-      live: null,
+      github: 'https://github.com/sharma151/Businesscard-Generator',
+      live: 'https://businesscard-generator.vercel.app/',
       info: 'A versatile generator hub built with React and styled using Sass/SCSS, allowing users to create barcodes, QR codes, and digital business cards by simply entering their data. Designed for ease of use with a clean, responsive interface.',
     },
     {
