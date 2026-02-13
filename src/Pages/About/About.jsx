@@ -12,7 +12,9 @@ import {
   SiPostman,
   SiJupyter,
   SiHeroku,
+  SiReactrouter
 } from "react-icons/si";
+import { AiOutlineSlack } from "react-icons/ai";
 import { VscVscode } from "react-icons/vsc";
 
 import { IoLogoGitlab } from "react-icons/io5";
@@ -28,6 +30,7 @@ const About = () => {
     DiJavascript1,
     SiTypescript,
     DiReact,
+    SiReactrouter,
     SiReactquery,
     DiGit,
     FaVuejs,
@@ -42,6 +45,7 @@ const About = () => {
     SiJupyter,
     SiHeroku,
     IoLogoGitlab,
+    AiOutlineSlack,
   ];
 
   return (
