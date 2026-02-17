@@ -15,7 +15,7 @@ function ProjectCard({ title, image, github, live, info }) {
         loading="lazy"
         className="rounded-md mb-4 w-full h-48 sm:h-44 xs:h-40 object-cover"
       />
-      <h3 className="text-[var(--text-color)] text-xl font-semibold mb-4">
+      <h3 className="text-(--text-color) text-xl font-semibold mb-4">
         {title}
       </h3>
       <p className="text-gray-400 mb-4">{info}</p>
@@ -25,7 +25,7 @@ function ProjectCard({ title, image, github, live, info }) {
             href={github}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-2 text-[var(--text-color)] px-4 py-2 rounded transition border border-purple-400"
+            className="flex items-center gap-2 text-(--text-color) px-4 py-2 rounded transition border border-purple-400"
           >
             <AiFillGithub />
             GitHub
@@ -33,7 +33,7 @@ function ProjectCard({ title, image, github, live, info }) {
         ) : (
           <a
             onClick={handleWorkInProgressClick}
-            className="flex items-center gap-2 text-[var(--text-color)] px-4 py-2 rounded transition border border-purple-400"
+            className="flex items-center gap-2 text-(--text-color) px-4 py-2 rounded transition border border-purple-400"
           >
             <AiFillGithub />
             GitHub
@@ -44,7 +44,7 @@ function ProjectCard({ title, image, github, live, info }) {
             href={live}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-2 text-[var(--text-color)] px-4 py-2 rounded border border-purple-400 transition"
+            className="flex items-center gap-2 text-(--text-color) px-4 py-2 rounded border border-purple-400 transition"
           >
             <FaExternalLinkAlt />
             Live
@@ -52,7 +52,7 @@ function ProjectCard({ title, image, github, live, info }) {
         ) : (
           <a
             onClick={handleWorkInProgressClick}
-            className="flex items-center gap-2 text-[var(--text-color)] px-4 py-2 rounded border border-purple-400 transition"
+            className="flex items-center gap-2 text-(--text-color) px-4 py-2 rounded border border-purple-400 transition"
           >
             <FaExternalLinkAlt />
             Live

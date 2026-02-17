@@ -4,7 +4,7 @@ import myImg from "@/assets/avatar.png";
 
 function HomeAboutMe() {
   return (
-    <div id="about" className="w-full py-12 text-[var(--text-color)]">
+    <div id="about" className="w-full py-12 text-(--text-color)">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 px-4 md:px-18">
         <motion.div
           className="md:w-2/3 space-y-6"

@@ -43,7 +43,7 @@ function NavBar() {
   ];
 
   return (
-    <nav className=" sticky top-3 z-50 backdrop-blur-md bg-black/10 border border-white/10 text-[var(--text-color)] px-6  rounded-2xl mx-4 mt-4">
+    <nav className=" sticky top-3 z-50 backdrop-blur-md bg-black/10 border border-white/10 text-(--text-color) px-6  rounded-2xl mx-4 mt-4">
       <div className="flex justify-between items-center">
         {/* Logo */}
         <NavLink to="/">
@@ -66,7 +66,7 @@ function NavBar() {
                   to={item.path}
                   className={({ isActive }) =>
                     `flex items-center gap-1 transition ${
-                      isActive ? "text-purple-500" : "text-[var(--text-color)]"
+                      isActive ? "text-purple-500" : "text-(--text-color)"
                     } hover:text-purple-500`
                   }
                 >
@@ -116,7 +116,7 @@ function NavBar() {
               onClick={() => setIsMenuOpen(false)}
               className={({ isActive }) =>
                 `block px-4 py-2 rounded transition ${
-                  isActive ? "text-purple-500" : "text-[var(--text-color)]"
+                  isActive ? "text-purple-500" : "text-(--text-color)"
                 } hover:bg-gray-700`
               }
             >

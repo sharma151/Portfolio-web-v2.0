@@ -22,7 +22,7 @@ function Home1() {
         >
           <div className="md:w-7/12 w-full space-y-6 ">
             <motion.h1
-              className="text-4xl md:text-5xl font-bold text-[var(--text-color)]"
+              className="text-4xl md:text-5xl font-bold text-(--text-color)"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }} // Delay for staggered effect
@@ -33,7 +33,7 @@ function Home1() {
               </span>
             </motion.h1>
             <motion.h1
-              className="text-4xl md:text-5xl font-bold text-[var(--text-color)]"
+              className="text-4xl md:text-5xl font-bold text-(--text-color)"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 1 }} // Delay for staggered effect

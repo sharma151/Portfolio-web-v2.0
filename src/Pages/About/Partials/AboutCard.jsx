@@ -10,7 +10,7 @@ function About() {
     <div className="flex flex-col md:flex-row justify-center items-start gap-12 px-6 py-14 md:py-24 max-w-7xl mx-auto">
       {/* Left Section */}
       <div className="md:w-7/12 flex flex-col justify-start">
-        <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center  text-[var(--text-color)]">
+        <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center  text-(--text-color)">
           Know Who <span className="text-purple-400">I&apos;M 🚀</span>
         </h1>
 
