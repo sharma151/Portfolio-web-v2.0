@@ -38,7 +38,9 @@ const Home = () => {
         <HomeAboutMe />
         <FeaturedProjects heading="Featured projects" projects={projects} />
         <MediumArticles />
-        <ContactUs />
+        <div id="contact-section">
+          <ContactUs />
+        </div>
       </div>
     </>
   );

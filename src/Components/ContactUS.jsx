@@ -48,21 +48,21 @@ const ContactUs = () => {
     <div className="max-w-5xl mx-5 md:mx-5 lg:mx-auto px-1 sm:px-6 lg:px-8 py-8   rounded-2xl shadow-2xl backdrop-blur-lg border border-white/10">
       <div className="grid md:grid-cols-2 gap-8 md:gap-12">
         {/* Left Side - Contact Information */}
-        <div className="space-y-8 text-[var(--text-color)]/90 relative px-4 sm:px-0">
-          <h2 className="text-3xl sm:text-4xl font-bold py-1 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent animate-gradient-x">
+        <div className="space-y-8 text-(--text-color)/90 relative px-4 sm:px-0">
+          <h2 className="text-3xl sm:text-4xl font-bold py-1 bg-linear-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent animate-gradient-x">
             Let&apos;s Create Magic ✨
           </h2>
-          <p className="text-base sm:text-lg leading-relaxed text-[var(--text-color)]/80">
+          <p className="text-base sm:text-lg leading-relaxed text-(--text-color)/80">
             Ready to bring your ideas to life? Drop me a message and let&apos;s
             craft something extraordinary together.
           </p>
-          <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full opacity-30"></div>
+          <div className="absolute -bottom-2 left-0 w-full h-1 bg-linear-to-r from-blue-400 to-purple-500 rounded-full opacity-30"></div>
 
           <SocialLinks />
         </div>
 
         {/* Right Side - Contact Form */}
-        <div className="text-[var(--text-color)] rounded-xl px-4 sm:px-0">
+        <div className="text-(--text-color) rounded-xl px-4 sm:px-0">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-2 gap-3 sm:gap-4">
               {/* First Name */}
@@ -74,10 +74,10 @@ const ContactUs = () => {
                   value={formData.first_name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4  py-3 bg-white/5 backdrop-blur-sm rounded-xl border  focus:border-blue-400/50 focus:ring-2 focus:ring-blue-400/20 transition-all  placeholder:text-[var(--text-color)] text-sm sm:text-base"
+                  className="w-full px-4  py-3 bg-white/5 backdrop-blur-sm rounded-xl border  focus:border-blue-400/50 focus:ring-2 focus:ring-blue-400/20 transition-all  placeholder:text-(--text-color) text-sm sm:text-base"
                   placeholder="First Name"
                 />
-                <span className="absolute right-2 top-3.5 text-[var(--text-color)] focus-within:text-blue-300 text-sm">
+                <span className="absolute right-2 top-3.5 text-(--text-color) focus-within:text-blue-300 text-sm">
                   👤
                 </span>
               </div>
@@ -91,10 +91,10 @@ const ContactUs = () => {
                   value={formData.last_name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm rounded-xl border  focus:border-blue-400/50 focus:ring-2 focus:ring-blue-400/20  transition-all placeholder:text-[var(--text-color)]  text-sm sm:text-base"
+                  className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm rounded-xl border  focus:border-blue-400/50 focus:ring-2 focus:ring-blue-400/20  transition-all placeholder:text-(--text-color)  text-sm sm:text-base"
                   placeholder="Last Name"
                 />
-                <span className="absolute right-2 top-3.5 text-[var(--text-color)] focus-within:text-blue-300 text-sm">
+                <span className="absolute right-2 top-3.5 text-(--text-color) focus-within:text-blue-300 text-sm">
                   📝
                 </span>
               </div>
@@ -109,10 +109,10 @@ const ContactUs = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 pr-10 py-3 bg-white/5 backdrop-blur-sm rounded-xl border  focus:border-blue-400/50 focus:ring-2 focus:ring-blue-400/20 placeholder:text-[var(--text-color)]  transition-all text-sm sm:text-base"
+                className="w-full px-4 pr-10 py-3 bg-white/5 backdrop-blur-sm rounded-xl border  focus:border-blue-400/50 focus:ring-2 focus:ring-blue-400/20 placeholder:text-(--text-color)  transition-all text-sm sm:text-base"
                 placeholder="Email Address"
               />
-              <span className="absolute right-3 top-3.5 text-[var(--text-color)] focus-within:text-blue-300 text-sm">
+              <span className="absolute right-3 top-3.5 text-(--text-color) focus-within:text-blue-300 text-sm">
                 ✉️
               </span>
             </div>
@@ -126,10 +126,10 @@ const ContactUs = () => {
                 value={formData.subject}
                 onChange={handleChange}
                 required
-                className="w-full px-4 pr-10 py-3 bg-white/5 backdrop-blur-sm rounded-xl border  focus:border-blue-400/50 focus:ring-2 focus:ring-blue-400/20 placeholder:text-[var(--text-color)]  transition-all text-sm sm:text-base"
+                className="w-full px-4 pr-10 py-3 bg-white/5 backdrop-blur-sm rounded-xl border  focus:border-blue-400/50 focus:ring-2 focus:ring-blue-400/20 placeholder:text-(--text-color)  transition-all text-sm sm:text-base"
                 placeholder="Subject"
               />
-              <span className="absolute right-3 top-3.5 text-[var(--text-color)] focus-within:text-blue-300 text-sm">
+              <span className="absolute right-3 top-3.5 text-(--text-color) focus-within:text-blue-300 text-sm">
                 🔖
               </span>
             </div>
@@ -143,10 +143,10 @@ const ContactUs = () => {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                className="w-full px-4 pr-10 py-3 bg-white/5 backdrop-blur-sm rounded-xl border  focus:border-blue-400/50 focus:ring-2 focus:ring-blue-400/20 placeholder:text-[var(--text-color)]  transition-all resize-none text-sm sm:text-base"
+                className="w-full px-4 pr-10 py-3 bg-white/5 backdrop-blur-sm rounded-xl border  focus:border-blue-400/50 focus:ring-2 focus:ring-blue-400/20 placeholder:text-(--text-color)  transition-all resize-none text-sm sm:text-base"
                 placeholder="Your Message"
               ></textarea>
-              <span className="absolute right-3 top-3.5 text-[var(--text-color)] focus-within:text-blue-300 text-sm">
+              <span className="absolute right-3 top-3.5 text-(--text-color) focus-within:text-blue-300 text-sm">
                 ✏️
               </span>
             </div>
@@ -155,13 +155,13 @@ const ContactUs = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full py-3 sm:py-4 px-6 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-400 hover:to-purple-400 rounded-xl font-semibold text-[var(--text-color)] tracking-wide transform transition-all duration-300 hover:scale-[1.02] active:scale-95 shadow-lg hover:shadow-xl relative overflow-hidden group text-sm sm:text-base"
+              className="w-full py-3 sm:py-4 px-6 bg-linear-to-r from-blue-500 to-purple-500 hover:from-blue-400 hover:to-purple-400 rounded-xl font-semibold text-(--text-color) tracking-wide transform transition-all duration-300 hover:scale-[1.02] active:scale-95 shadow-lg hover:shadow-xl relative overflow-hidden group text-sm sm:text-base"
             >
               <span className="relative z-10 flex items-center justify-center gap-2">
                 {isSubmitting ? (
                   <>
                     <svg
-                      className="animate-spin -ml-1 mr-3 h-5 w-5 text-[var(--text-color)]"
+                      className="animate-spin -ml-1 mr-3 h-5 w-5 text-(--text-color)"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -191,7 +191,7 @@ const ContactUs = () => {
                   </>
                 )}
               </span>
-              <span className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+              <span className="absolute inset-0 bg-linear-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
             </button>
           </form>
         </div>

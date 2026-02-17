@@ -11,8 +11,8 @@ function AboutMe() {
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
     >
-      <div className="text-[var(--text-color)]">
-        <p className="text-base md:text-lg leading-relaxed md:leading-relaxed text-[var(--text-color)] md:text-justify">
+      <div className="text-(--text-color)">
+        <p className="text-base md:text-lg leading-relaxed md:leading-relaxed text-(--text-color) md:text-justify">
           Hello, I&apos;m{" "}
           <span className="text-purple-400 font-semibold">Saurav Sharma</span>{" "}
           from{" "}
@@ -67,17 +67,17 @@ function AboutMe() {
           <h3 className="text-xl md:text-2xl font-semibold mb-4 text-purple-400 text-center">
             Interests Beyond Development
           </h3>
-          <ul className="list-disc ml-6 space-y-2 text-[var(--text-color)]">
+          <ul className="list-disc ml-6 space-y-2 text-(--text-color)">
             <li className="flex items-start">
-              <ImPointRight className="text-purple-400 mr-2 mt-1 flex-shrink-0" />
+              <ImPointRight className="text-purple-400 mr-2 mt-1 shrink-0" />
               Gaming and Strategy-based Games 🎮
             </li>
             <li className="flex items-start">
-              <ImPointRight className="text-purple-400 mr-2 mt-1 flex-shrink-0" />
+              <ImPointRight className="text-purple-400 mr-2 mt-1 shrink-0" />
               Exploring Music and Audio Technologies 🎵
             </li>
             <li className="flex items-start">
-              <ImPointRight className="text-purple-400 mr-2 mt-1 flex-shrink-0" />
+              <ImPointRight className="text-purple-400 mr-2 mt-1 shrink-0" />
               Hiking and Nature Exploration ⛰️
             </li>
           </ul>
