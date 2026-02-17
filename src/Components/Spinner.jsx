@@ -3,7 +3,7 @@ import { RotatingLines } from "react-loader-spinner";
 // eslint-disable-next-line react/prop-types
 const Spinner = ({ width, height }) => {
   return (
-    <div className="flex items-center justify-center h-screen bg-[#0e0a18]">
+    <span className="flex items-center justify-center h-screen bg-[#0e0a18]">
       <RotatingLines
         visible={true}
         height={height}
@@ -14,7 +14,7 @@ const Spinner = ({ width, height }) => {
         animationDuration="0.25"
         ariaLabel="rotating-lines-loading"
       />
-    </div>
+    </span>
   );
 };
 

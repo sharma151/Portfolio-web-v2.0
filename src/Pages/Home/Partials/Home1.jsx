@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import Type from '@/Components/Type';
 import { HashLink as Link } from 'react-router-hash-link';
+import { NavLink } from 'react-router-dom';
 function Home1() {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -76,17 +77,19 @@ function Home1() {
           {/* 4. Action Buttons */}
           <motion.div variants={itemVariants} className="flex gap-3 sm:gap-5 mt-6">
             {/* Primary Button */}
-            <button className="group relative  px-4 sm:px-8 py-4 rounded-2xl bg-slate-900 dark:bg-gradient-to-r dark:from-blue-600 dark:to-purple-600 text-white font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl dark:shadow-[0_0_20px_rgba(96,165,250,0.3)]">
-              <span className="flex items-center gap-2">
-                View Projects
-                <span className="group-hover:translate-x-1 transition-transform">→</span>
-              </span>
-            </button>
+            <NavLink to="/projects">
+              <button className="group relative  px-4 sm:px-8 py-4 rounded-2xl bg-slate-900 dark:bg-gradient-to-r dark:from-blue-600 dark:to-purple-600 text-white font-bold sm:text-lg hover:scale-105 transition-all duration-300 shadow-xl dark:shadow-[0_0_20px_rgba(96,165,250,0.3)]">
+                <span className="flex items-center gap-2">
+                  View Projects
+                  <span className="group-hover:translate-x-1 transition-transform">→</span>
+                </span>
+              </button>
+            </NavLink>
 
             {/* Secondary Glass Button */}
 
             <Link smooth to="#contact-section">
-              <button className="px-4 sm:px-8 py-4 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 backdrop-blur-md text-slate-900 dark:text-white font-semibold text-lg hover:bg-slate-50 dark:hover:bg-white/10 transition-all duration-300 shadow-sm">
+              <button className="px-4 sm:px-8 py-4 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 backdrop-blur-md text-slate-900 dark:text-white font-semibold sm:text-lg hover:bg-slate-50 dark:hover:bg-white/10 transition-all duration-300 shadow-sm">
                 Contact Me
               </button>
             </Link>
