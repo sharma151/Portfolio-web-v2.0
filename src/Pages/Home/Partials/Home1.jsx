@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import Type from '@/Components/Type';
+import Type from '@/components/Type';
 import { HashLink as Link } from 'react-router-hash-link';
 import { NavLink } from 'react-router-dom';
 function Home1() {
