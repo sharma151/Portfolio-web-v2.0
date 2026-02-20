@@ -1,9 +1,5 @@
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { AiFillGithub, AiOutlineTwitter, AiFillInstagram } from 'react-icons/ai';
+import { FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -12,9 +8,7 @@ const Footer = () => {
     <footer className="w-full text-(--text-color) py-6">
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
         <div className="mb-4 md:mb-0">
-          <h3 className="text-sm font-semibold">
-            Designed and Developed by Saurav shamra
-          </h3>
+          <h3 className="text-sm font-semibold">Designed and Developed by Saurav sharma</h3>
         </div>
         <div className="mb-4 md:mb-0">
           <h3 className="text-sm">© {year} SS</h3>
