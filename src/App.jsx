@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import AppRoutes from '@/Routes/AppRoutes';
 import { pdfjs } from 'react-pdf';
 import Spinner from '@/components/Spinner';
-import ScrollToTop from './components/ScrollToTop';
+// import ScrollToTop from './components/ScrollToTop';
 import { inject } from '@vercel/analytics';
 
 // Set the worker source for react-pdf
@@ -31,7 +31,7 @@ const App = () => {
       ) : (
         <>
           <AppRoutes />
-          <ScrollToTop />
+          {/* <ScrollToTop /> */}
         </>
       )}
     </>
