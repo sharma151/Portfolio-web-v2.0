@@ -36,7 +36,7 @@ function Resume() {
       <a
         href={pdf}
         download
-        className="mt-5 mb-5 px-5 py-2 bg-[#AD46FF] text-[var(--text-color)] no-underline rounded flex items-center gap-2"
+        className="mt-5 mb-5 px-5 py-2 bg-[#AD46FF] text-(--text-color) no-underline rounded flex items-center gap-2"
       >
         <AiOutlineDownload /> Download Resume
       </a>
@@ -76,7 +76,7 @@ function Resume() {
       <a
         href={pdf}
         download
-        className="mt-5 px-5 py-2 bg-[#AD46FF] text-[var(--text-color)] no-underline rounded flex items-center gap-2"
+        className="mt-5 px-5 py-2 bg-[#AD46FF] text-(--text-color) no-underline rounded flex items-center gap-2"
       >
         <AiOutlineDownload /> Download Resume
       </a>

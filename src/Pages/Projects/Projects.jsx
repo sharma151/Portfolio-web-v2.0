@@ -1,4 +1,4 @@
-import FeaturedProjects from '@/Components/FeaturedProjects';
+import FeaturedProjects from '@/components/FeaturedProjects';
 import React from 'react';
 
 const Projects = () => {

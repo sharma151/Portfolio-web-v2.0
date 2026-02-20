@@ -115,15 +115,15 @@ const EducationRoadmap = () => {
                     </Link>
                     {item.degree && (
                       <div className="flex items-center mb-2">
-                        <span className="text-[var(--text-color)] font-medium text-sm md:text-base">
+                        <span className="text-(--text-color) font-medium text-sm md:text-base">
                           {item.degree}
                         </span>
                       </div>
                     )}
-                    <p className="text-[var(--text-color)] text-sm md:text-base mb-3 md:mb-4">
+                    <p className="text-(--text-color) text-sm md:text-base mb-3 md:mb-4">
                       {item.description}
                     </p>
-                    <p className="text-[var(--text-color)] font-medium text-xs md:text-sm">
+                    <p className="text-(--text-color) font-medium text-xs md:text-sm">
                       {item.institution}
                     </p>
                   </div>

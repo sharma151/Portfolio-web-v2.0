@@ -1,14 +1,14 @@
 /* eslint-disable import/namespace */
-import React, { useEffect, useState } from "react";
-import AppRoutes from "@/Routes/AppRoutes";
-import { pdfjs } from "react-pdf";
-import Spinner from "@/Components/Spinner";
-import ScrollToTop from "./Components/ScrollToTop";
-import { inject } from "@vercel/analytics";
+import React, { useEffect, useState } from 'react';
+import AppRoutes from '@/Routes/AppRoutes';
+import { pdfjs } from 'react-pdf';
+import Spinner from '@/components/Spinner';
+import ScrollToTop from './components/ScrollToTop';
+import { inject } from '@vercel/analytics';
 
 // Set the worker source for react-pdf
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  "pdfjs-dist/build/pdf.worker.min.mjs",
+  'pdfjs-dist/build/pdf.worker.min.mjs',
   import.meta.url
 ).toString();
 
@@ -26,7 +26,6 @@ const App = () => {
 
   return (
     <>
-      {" "}
       {loading ? (
         <Spinner width={40} height={40} />
       ) : (
