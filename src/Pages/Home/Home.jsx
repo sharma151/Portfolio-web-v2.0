@@ -1,8 +1,8 @@
 import Home1 from './Partials/Home1';
-import MediumArticles from '@/Components/MediumArticles';
-import HomeAboutMe from '@/Components/HomeAboutMe';
-import FeaturedProjects from '@/Components/FeaturedProjects';
-import ContactUs from '@/Components/ContactUS';
+import MediumArticles from '@/components/MediumArticles';
+import HomeAboutMe from '@/components/HomeAboutMe';
+import FeaturedProjects from '@/components/FeaturedProjects';
+import ContactUs from '@/components/ContactUS';
 
 const Home = () => {
   const projects = [
