@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import AppRoutes from '@/Routes/AppRoutes';
 import { pdfjs } from 'react-pdf';
-// import Spinner from '@/components/Spinner';
+import Spinner from '@/components/Spinner';
 // import ScrollToTop from './components/ScrollToTop';
 import { inject } from '@vercel/analytics';
 
@@ -27,8 +27,7 @@ const App = () => {
   return (
     <>
       {loading ? (
-        // <Spinner width={40} height={40} />
-        <p>loading</p>
+        <Spinner width={40} height={40} />
       ) : (
         <>
           <AppRoutes />
