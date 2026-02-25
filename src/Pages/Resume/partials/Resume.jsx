@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Document, Page } from 'react-pdf';
-import pdf from '../../../assets/saurav_resume.pdf';
+import pdf from '../../../assets/saurav-resume-in.pdf';
 import { AiOutlineDownload } from 'react-icons/ai';
 import { GrFormPrevious, GrFormNext } from 'react-icons/gr';
 
